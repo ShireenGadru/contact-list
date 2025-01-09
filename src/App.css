@@ -1,0 +1,77 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.contacts-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.contact-card {
+  background-color: rgb(253, 253, 253);
+  border-radius: 20px;
+  box-shadow: 1px 1px 1px 1px black;
+  color: black;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatar {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 2px solid rgb(255, 255, 255);
+  margin: 80px 0 10px 0;
+}
+
+.image-background {
+  background-color: rgb(169, 199, 163);
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+}
+
+.name {
+  font-size: 24px;
+  font-weight: 800;
+  color: rgb(56, 56, 56);
+}
+
+.city {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 30px;
+  color: rgb(56, 56, 56);
+  font-weight: 300;
+}
+
+.phone,
+.email {
+  margin: 2px 0;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.icon-phone {
+  width: 12px;
+  height: 12px;
+}
+
+.icon-email {
+  width: 20px;
+  height: 20px;
+}
+
+.phone-wrapper,
+.email-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+}

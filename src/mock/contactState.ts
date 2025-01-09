@@ -1,0 +1,80 @@
+export const initialContacts = [
+  {
+    name: "John Doe",
+    phone: "9876543210",
+    city: "New York",
+    image: "https://mighty.tools/mockmind-api/content/human/32.jpg",
+    email: "johndoe@gmail.com",
+  },
+  {
+    name: "Emily Smith",
+    phone: "9123456789",
+    city: "Los Angeles",
+    image: "https://mighty.tools/mockmind-api/content/human/56.jpg",
+    email: "emilysmith@gmail.com",
+  },
+  {
+    name: "Michael Johnson",
+    phone: "9865321478",
+    city: "Chicago",
+    image: "https://mighty.tools/mockmind-api/content/human/42.jpg",
+    email: "michael.johnson@gmail.com",
+  },
+  {
+    name: "Sophia Brown",
+    phone: "9638527410",
+    city: "Houston",
+    image: "https://mighty.tools/mockmind-api/content/human/78.jpg",
+    email: "sophiabrown@gmail.com",
+  },
+  {
+    name: "James Williams",
+    phone: "9871234567",
+    city: "Phoenix",
+    image: "https://mighty.tools/mockmind-api/content/human/92.jpg",
+    email: "james.williams@gmail.com",
+  },
+  {
+    name: "Olivia Jones",
+    phone: "9654321876",
+    city: "San Francisco",
+    image: "https://mighty.tools/mockmind-api/content/human/128.jpg",
+    email: "olivia.jones@gmail.com",
+  },
+  {
+    name: "Daniel Garcia",
+    phone: "9123785640",
+    city: "Austin",
+    image: "https://mighty.tools/mockmind-api/content/human/112.jpg",
+    email: "daniel.garcia@gmail.com",
+  },
+  {
+    name: "Isabella Martinez",
+    phone: "9876542103",
+    city: "Dallas",
+    image: "https://mighty.tools/mockmind-api/content/human/17.jpg",
+    email: "isabella.martinez@gmail.com",
+  },
+  {
+    name: "Benjamin Anderson",
+    phone: "9145637820",
+    city: "Seattle",
+    image: "https://mighty.tools/mockmind-api/content/human/112.jpg",
+    email: "benjamin.anderson@gmail.com",
+  },
+  {
+    name: "Charlotte Lee",
+    phone: "9654783210",
+    city: "Denver",
+    image: "https://mighty.tools/mockmind-api/content/human/111.jpg",
+    email: "charlotte.lee@gmail.com",
+  },
+];
+
+export const initialError = {
+  nameError: "",
+  phoneError: "",
+  emailError: "",
+  cityError: "",
+  imageError: "",
+};
