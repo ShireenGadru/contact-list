@@ -22,7 +22,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width:550px;
+  width: 550px;
   border-radius: 25px;
 }
 
@@ -44,6 +44,10 @@
   margin: 20px 0 3px 0;
 }
 
+.add-contact-form input:focus {
+  outline: 4px solid rgb(155, 197, 136);
+}
+
 .add-contact-form button {
   width: 100%;
   margin: 20px 0;
@@ -56,5 +60,36 @@
 }
 
 .add-contact-form .error-input {
-    border: 2px solid rgb(185, 32, 32);
+  border: 2px solid rgb(185, 32, 32);
+}
+
+.close-btn-wrapper {
+  display: flex;
+  justify-content: end;
+  width: 100%;
+}
+
+.close-button {
+  border: none;
+  color: black;
+  font-weight: 900;
+  background-color: transparent;
+  font-size: 26px;
+}
+
+.close-button:focus {
+  outline: none;
+}
+
+@media only screen and (max-width: 680px) {
+  .add-contact-form {
+    width: 100%;
+  }
+
+  .add-contact-form input {
+    width: 100%;
+  }
+  .modal-content {
+    width: 100%;
+  }
 }

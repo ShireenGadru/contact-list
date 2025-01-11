@@ -71,10 +71,10 @@ export const initialContacts = [
   },
 ];
 
-export const initialError = {
-  nameError: "",
-  phoneError: "",
-  emailError: "",
-  cityError: "",
-  imageError: "",
+export const intitialFormData = {
+  name: "",
+  phone: "",
+  city: "",
+  image: "",
+  email: "",
 };

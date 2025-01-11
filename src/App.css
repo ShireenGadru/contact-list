@@ -75,3 +75,21 @@
   align-items: center;
   gap: 3px;
 }
+
+.add-contact-btn {
+  margin-bottom: 30px;
+  background-color: rgb(225, 244, 248);
+  color: #202020;
+  transition: 0.5s;
+}
+
+.add-contact-btn:hover {
+  color: rgb(190, 190, 190);
+  background-color: #202020;
+}
+
+@media only screen and (max-width: 1320px) {
+  .contacts-wrapper {
+    justify-content: center;
+  }
+}

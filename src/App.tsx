@@ -1,20 +1,37 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./App.css";
 import { initialContacts } from "./mock/contactState";
-import { Contact } from "./types/contact.type";
+import { IContact } from "./types/contact.type";
 import { AddContact } from "./components/AddContact/AddContact";
 import phoneIcon from "./assets/telephone.png";
 import emailIcon from "./assets/email.png";
 
 function App() {
-  const [contacts, setContacts] = useState<Contact[]>(initialContacts);
+  const [contacts, setContacts] = useState<IContact[]>(initialContacts);
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
+
+  useEffect(() => {
+    if (isModalOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [isModalOpen]);
 
   return (
     <>
       <h1>Your Contacts</h1>
       <div>
-        <button onClick={() => setIsModalOpen(true)}>Add new contact</button>
+        <button
+          onClick={() => setIsModalOpen(true)}
+          className="add-contact-btn"
+        >
+          Add new contact
+        </button>
       </div>
       <div className="contacts-wrapper">
         {contacts?.map((contact) => {
@@ -40,7 +57,12 @@ function App() {
         })}
       </div>
 
-      {isModalOpen && <AddContact onSubmit={setContacts} />}
+      {isModalOpen && (
+        <AddContact
+          onSubmit={setContacts}
+          onCloseModal={() => setIsModalOpen(false)}
+        />
+      )}
     </>
   );
 }

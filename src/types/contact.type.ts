@@ -1,4 +1,4 @@
-export interface Contact {
+export interface IContact {
   name: string;
   phone: string;
   city: string;
@@ -7,13 +7,6 @@ export interface Contact {
 }
 
 export interface IAddContact {
-  onSubmit: React.Dispatch<React.SetStateAction<Contact[]>>;
-}
-
-export interface IErrorState {
-  nameError: string;
-  phoneError: string;
-  emailError: string;
-  cityError: string;
-  imageError: string;
+  onSubmit: React.Dispatch<React.SetStateAction<IContact[]>>;
+  onCloseModal: () => void;
 }

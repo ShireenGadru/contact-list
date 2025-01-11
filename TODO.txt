@@ -1,8 +1,2 @@
-1. Add error handling for form
-2. add close button in form
-3. remove scroll from background
-4. on clicking bg, modal will close
-5. make modal responsive
 
-
-6. EDit content
+6. Edit content
