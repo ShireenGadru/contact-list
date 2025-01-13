@@ -1,0 +1,36 @@
+.button-wrapper {
+  display: flex;
+  margin: 10px;
+  gap: 5px;
+}
+
+.edit-button {
+  background-color: rgb(231, 255, 163);
+  box-shadow: 1px 1px 1px rgb(168, 168, 168);
+}
+
+.delete-button {
+  background-color: rgb(145, 36, 36);
+  box-shadow: 1px 1px 1px rgb(168, 168, 168);
+}
+
+.save-btn {
+  background-color: rgb(138, 255, 144);
+  box-shadow: 1px 1px 1px rgb(168, 168, 168);
+}
+
+.cancel-btn {
+  background-color: rgb(215, 228, 226);
+  box-shadow: 1px 1px 1px rgb(168, 168, 168);
+}
+
+
+.contact-card input {
+    background-color: #fff8d5;
+    box-shadow: 1px 1px 3px 1px rgba(212, 212, 212, 0.452);
+    color: black;
+    border: none;
+    padding: 5px 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+}

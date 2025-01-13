@@ -3,6 +3,7 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  font-family: "Poppins", sans-serif;
 }
 
 .contacts-wrapper {
@@ -19,7 +20,6 @@
   width: 300px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 
@@ -32,23 +32,29 @@
 }
 
 .image-background {
-  background-color: rgb(169, 199, 163);
+  background: linear-gradient(to bottom, #e4c481, #ffffff);
+
   width: 100%;
   border-radius: 20px 20px 0 0;
 }
 
 .name {
-  font-size: 24px;
-  font-weight: 800;
-  color: rgb(56, 56, 56);
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
 }
 
 .city {
   font-size: 14px;
-  font-weight: 500;
-  margin-bottom: 30px;
-  color: rgb(56, 56, 56);
-  font-weight: 300;
+  margin-bottom: 5px;
+  color: rgb(102, 102, 102);
+}
+
+.city,
+.phone,
+.email {
+  font-size: 14px;
+  color: rgb(102, 102, 102);
 }
 
 .phone,
@@ -69,18 +75,31 @@
 }
 
 .phone-wrapper,
-.email-wrapper {
+.email-wrapper,
+.city-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 3px;
+  gap: 9px;
+}
+
+.add-btn-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .add-contact-btn {
   margin-bottom: 30px;
-  background-color: rgb(225, 244, 248);
+  background-color: #ffe345;
   color: #202020;
   transition: 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 120px;
+  font-size: 18px;
 }
 
 .add-contact-btn:hover {

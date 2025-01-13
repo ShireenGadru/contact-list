@@ -1,5 +1,6 @@
 export const initialContacts = [
   {
+    id: "d4eabc55-45f1-4c79-9e9e-bc0c3f39f3af",
     name: "John Doe",
     phone: "9876543210",
     city: "New York",
@@ -7,6 +8,7 @@ export const initialContacts = [
     email: "johndoe@gmail.com",
   },
   {
+    id: "1bc3fdea-65b4-4a21-a6df-eebf3333d1bb",
     name: "Emily Smith",
     phone: "9123456789",
     city: "Los Angeles",
@@ -14,6 +16,7 @@ export const initialContacts = [
     email: "emilysmith@gmail.com",
   },
   {
+    id: "4a9f3c72-3b2c-49ba-9c62-0ea123fdd7e8",
     name: "Michael Johnson",
     phone: "9865321478",
     city: "Chicago",
@@ -21,6 +24,7 @@ export const initialContacts = [
     email: "michael.johnson@gmail.com",
   },
   {
+    id: "ce5d28a4-939d-4d9b-aaf4-4d4fa3c67d1b",
     name: "Sophia Brown",
     phone: "9638527410",
     city: "Houston",
@@ -28,6 +32,7 @@ export const initialContacts = [
     email: "sophiabrown@gmail.com",
   },
   {
+    id: "7a2e3cd1-b493-4598-a493-59f7b9eab7e7",
     name: "James Williams",
     phone: "9871234567",
     city: "Phoenix",
@@ -35,6 +40,7 @@ export const initialContacts = [
     email: "james.williams@gmail.com",
   },
   {
+    id: "4d5f678a-5e9c-4e12-bf39-223f61aecc29",
     name: "Olivia Jones",
     phone: "9654321876",
     city: "San Francisco",
@@ -42,6 +48,7 @@ export const initialContacts = [
     email: "olivia.jones@gmail.com",
   },
   {
+    id: "ce98af17-9125-4038-995b-1a81c00eb459",
     name: "Daniel Garcia",
     phone: "9123785640",
     city: "Austin",
@@ -49,6 +56,7 @@ export const initialContacts = [
     email: "daniel.garcia@gmail.com",
   },
   {
+    id: "3eb9e1fc-dc71-4019-b1f6-6d237b8f0c15",
     name: "Isabella Martinez",
     phone: "9876542103",
     city: "Dallas",
@@ -56,6 +64,7 @@ export const initialContacts = [
     email: "isabella.martinez@gmail.com",
   },
   {
+    id: "1d5f9fa7-2e65-4a3c-9c4b-bba98d3ef67d",
     name: "Benjamin Anderson",
     phone: "9145637820",
     city: "Seattle",
@@ -63,6 +72,7 @@ export const initialContacts = [
     email: "benjamin.anderson@gmail.com",
   },
   {
+    id: "5af8e913-4df3-4237-84cd-d71c6e5a8e22",
     name: "Charlotte Lee",
     phone: "9654783210",
     city: "Denver",
@@ -72,6 +82,7 @@ export const initialContacts = [
 ];
 
 export const intitialFormData = {
+  id: "",
   name: "",
   phone: "",
   city: "",

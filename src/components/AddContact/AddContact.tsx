@@ -8,6 +8,7 @@ export const AddContact = (props: IAddContact) => {
   const { onSubmit, onCloseModal } = props;
   const [formData, setFormData] = useState<IContact>(intitialFormData);
   const [error, setError] = useState<Partial<IContact>>({});
+  const id = crypto.randomUUID();
 
   const validateForm = () => {
     const errorObj: Partial<IContact> = {};
@@ -60,7 +61,6 @@ export const AddContact = (props: IAddContact) => {
       return newErrors;
     });
   };
-  console.log(formData, error);
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -68,7 +68,7 @@ export const AddContact = (props: IAddContact) => {
     if (hasErrors(formErrors)) {
       setError(formErrors);
     } else {
-      onSubmit((prev) => [...prev, formData]);
+      onSubmit((prev) => [...prev, {...formData, id}]);
       onCloseModal();
     }
   };
